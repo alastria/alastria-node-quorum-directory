@@ -48,9 +48,9 @@ case $TYPE in
 esac
 
 # Check ENODE
-if [[ ! $ENODE =~ ^enode:\/\/[0-9a-f]{128}@((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[1-9]?[0-9])\.){3}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[1-9]?[0-9]):21000\?discport=0$ ]]; then
+if [[ ! $ENODE =~ ^enode:\/\/[0-9a-f]{128}@((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[1-9]?[0-9])\.){3}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[1-9]?[0-9]):21000\?discport=[0-9]+$ ]]; then
 	echo "ERROR: invalid input 'enode'"
-	echo "ERROR: enode address $ENODE is incorrect. Possible causes: incorrect number of characters, invalid IP address format, specified port is different to 21000, param 'discport' has value different to 0, or any other kind of malformed address."
+	echo "ERROR: enode address $ENODE is incorrect. Possible causes: incorrect number of characters, invalid IP address format, specified port is different to 21000, or any other kind of malformed address."
 	exit 1
 fi
 
