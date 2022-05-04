@@ -16,7 +16,7 @@ on:
         default: ''
         required: true
       enode:
-        description: 'Full enode address [enode://<ENODE>@<IP>:21000?discport=0]'
+        description: 'Full enode address [enode://<ENODE>@<IP>:21000?discport=<PORT>]'
         default: ''
         required: true
       address:
