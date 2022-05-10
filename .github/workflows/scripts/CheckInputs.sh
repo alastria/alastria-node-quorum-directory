@@ -10,9 +10,9 @@ fi
 # Check NAME
 case $TYPE in
 	"bootnode")
-		if [[ ! $NAME =~ ^BOT_[a-zA-Z0-9_]+_T_[0-9][0-9]?_[0-9][0-9]?_[0-9][0-9]?$ ]]; then
+		if [[ ! $NAME =~ ^BOT_[a-zA-Z0-9_-]+_T_[0-9][0-9]?_[0-9][0-9]?_[0-9][0-9]?$ ]]; then
 			echo "ERROR: invalid input 'name'"
-			echo "ERROR: node name $NAME of type $TYPE doesn't match expression ^BOT_[a-zA-Z0-9]+_T_[0-9][0-9]?_[0-9][0-9]?_[0-9][0-9]?$"
+			echo "ERROR: node name $NAME of type $TYPE doesn't match expression ^BOT_[a-zA-Z0-9_-]+_T_[0-9][0-9]?_[0-9][0-9]?_[0-9][0-9]?$"
 			exit 1
 		fi
 		if grep -q $NAME ./DIRECTORY_BOOTNODES.md; then
@@ -22,9 +22,9 @@ case $TYPE in
 		fi
 	;;
 	"validator")
-		if [[ ! $NAME =~ ^VAL_[a-zA-Z0-9_]+_T_[0-9][0-9]?_[0-9][0-9]?_[0-9][0-9]?$ ]]; then
+		if [[ ! $NAME =~ ^VAL_[a-zA-Z0-9_-]+_T_[0-9][0-9]?_[0-9][0-9]?_[0-9][0-9]?$ ]]; then
 			echo "ERROR: invalid input 'name'"
-			echo "ERROR: node name $NAME of type $TYPE doesn't match expression ^VAL_[a-zA-Z0-9]+_T_[0-9][0-9]?_[0-9][0-9]?_[0-9][0-9]?$"
+			echo "ERROR: node name $NAME of type $TYPE doesn't match expression ^VAL_[a-zA-Z0-9_-]+_T_[0-9][0-9]?_[0-9][0-9]?_[0-9][0-9]?$"
 			exit 1
 		fi
 		if grep -q $NAME ./DIRECTORY_VALIDATOR.md; then
@@ -34,9 +34,9 @@ case $TYPE in
 		fi
 	;;
 	"regular")
-		if [[ ! $NAME =~ ^REG_[a-zA-Z0-9_]+_T_[0-9][0-9]?_[0-9][0-9]?_[0-9][0-9]?$ ]]; then
+		if [[ ! $NAME =~ ^REG_[a-zA-Z0-9_-]+_T_[0-9][0-9]?_[0-9][0-9]?_[0-9][0-9]?$ ]]; then
 			echo "ERROR: invalid input 'name'"
-			echo "ERROR: node name $NAME of type $TYPE doesn't match expression ^REG_[a-zA-Z0-9]+_T_[0-9][0-9]?_[0-9][0-9]?_[0-9][0-9]?$"
+			echo "ERROR: node name $NAME of type $TYPE doesn't match expression ^REG_[a-zA-Z0-9_-]+_T_[0-9][0-9]?_[0-9][0-9]?_[0-9][0-9]?$"
 			exit 1
 		fi
 		if grep -q $NAME ./DIRECTORY_REGULAR.md; then
