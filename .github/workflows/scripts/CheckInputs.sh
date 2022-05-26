@@ -88,20 +88,20 @@ if grep -q $ip ./DIRECTORY_VALIDATOR.md; then
 	exit 1
 fi
 
-ip_response=$(curl -s -X POST -F "host=$ip" https://ping.eu/action.php?atype=12)
-if grep -q "</STRONG> located in <STRONG>" <<< "$ip_response"; then
-	countries='^(Austria|Belgium|Bulgaria|Croatia|Cyprus|Czech Republic|Denmark|Estonia|Finland|France|Germany|Greece|Hungary|Ireland|Italy|Latvia|Lithuania|Luxembourg|Malta|Netherlands|Poland|Portugal|Romania|Slovakia|Slovenia|Spain|Sweden)$'
-	country=$(echo "$ip_response" | tr -d '\n\r' | sed -n "s/^.*located in <STRONG>\(.*\)<\/STRONG>.*$/\1/p")
-	if [[ ! $country =~ $countries ]]; then
-		echo "ERROR: invalid input 'enode'"
-		echo "ERROR: ip $ip is not from an EU country"
-		exit 1
-	fi
-else
-	echo "ERROR: invalid input 'enode'"
-	echo "ERROR: ip $ip is not a valid public ip address"
-	exit 1
-fi
+#ip_response=$(curl -s -X POST -F "host=$ip" https://ping.eu/action.php?atype=12)
+#if grep -q "</STRONG> located in <STRONG>" <<< "$ip_response"; then
+#	countries='^(Austria|Belgium|Bulgaria|Croatia|Cyprus|Czech Republic|Denmark|Estonia|Finland|France|Germany|Greece|Hungary|Ireland|Italy|Latvia|Lithuania|Luxembourg|Malta|Netherlands|Poland|Portugal|Romania|Slovakia|Slovenia|Spain|Sweden)$'
+#	country=$(echo "$ip_response" | tr -d '\n\r' | sed -n "s/^.*located in <STRONG>\(.*\)<\/STRONG>.*$/\1/p")
+#	if [[ ! $country =~ $countries ]]; then
+#		echo "ERROR: invalid input 'enode'"
+#		echo "ERROR: ip $ip is not from an EU country"
+#		exit 1
+#	fi
+#else
+#	echo "ERROR: invalid input 'enode'"
+#	echo "ERROR: ip $ip is not a valid public ip address"
+#	exit 1
+#fi
 
 # Check ADDRESS
 if [[ $TYPE =~ ^validator$ ]]; then
