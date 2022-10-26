@@ -2,7 +2,6 @@
 
 | Entidad | Hosting info (Cores/Mem/HDD) | enode | node_add | active |
 | ---     | ---                          | ---   | ---      | ---    |
-| AST-Gobierno de Aragón | Self-Hosted (2C/4Gb/40GB) | enode://367354e3bb59d015fce31967f5dda5c17cb3b9acc5b571695f94a13f89d2a2c64c3bca28da05b6751a7384c38152752de35787d97e9b8d6062b3371b7a9305c4@188.244.90.2:21000?discport=0 | fad2a6b1bfa8330f1ecbdaa125986942b98d497f | True |
 | Alisys | Self hosted (1C/4GB/70GB) | enode://3905f943ba5446eba164c07ab5f53a84ce17d74ec4d7591f6ec54b9d7608f57cae7cfdf946616385f59cfb5b910161a1f8520cb6f992bcc0d1ab932601205e91@154.62.228.6:21000?discport=0 | b87dc349944cc47474775dde627a8a171fc94532 | True |
 | COUNCILBOX | Azure (2C/4Gb/512GiB) | enode://a7e28844702e519f504802a0b45638049db8bf08e18d12e0713c9e5c5707bfabb029583a87e94f8985f9584bee9257a7efe5e057ea61e6b5a16f1eb0b9b3623a@52.232.74.132:21000?discport=0 | 6980a7683a1936197ad7bf6cb0c26f1ff4151905 | True |
 | DigitelTS-VAL-01 | AWS (4C/16Gb/256GB) | enode://32ed5766ac0c482bd7f950087c389710e31b75bf6a06628820f224ddd2fce216b26b113836a456832bbb62a9521d768923dcb8c1c6cbddd06071fa27e1688a1c@176.34.235.103:21000?discport=0 | ebc69e585b93f293e6552a0110afc196d90105dd | False |
