@@ -2,7 +2,6 @@
 
 | Entidad | Hosting info (Cores/Mem/HDD) | enode | node_add | active |
 | ---     | ---                          | ---   | ---      | ---    |
-| Alisys | Self hosted (1C/4GB/70GB) | enode://3905f943ba5446eba164c07ab5f53a84ce17d74ec4d7591f6ec54b9d7608f57cae7cfdf946616385f59cfb5b910161a1f8520cb6f992bcc0d1ab932601205e91@154.62.228.6:21000?discport=0 | b87dc349944cc47474775dde627a8a171fc94532 | True |
 | COUNCILBOX | Azure (2C/4Gb/512GiB) | enode://a7e28844702e519f504802a0b45638049db8bf08e18d12e0713c9e5c5707bfabb029583a87e94f8985f9584bee9257a7efe5e057ea61e6b5a16f1eb0b9b3623a@52.232.74.132:21000?discport=0 | 6980a7683a1936197ad7bf6cb0c26f1ff4151905 | True |
 | DigitelTS-VAL-01 | AWS (4C/16Gb/256GB) | enode://32ed5766ac0c482bd7f950087c389710e31b75bf6a06628820f224ddd2fce216b26b113836a456832bbb62a9521d768923dcb8c1c6cbddd06071fa27e1688a1c@176.34.235.103:21000?discport=0 | ebc69e585b93f293e6552a0110afc196d90105dd | False |
 | IN2 | AWS Paris (2C/4Gb/100Gb) | enode://0ede782b7ce6c7398f100ef33aef6c266972dac19910b5aac1c1eededccd7b4769e7df69e4314927417bbdd9592fc9f583c36274976af29e432b8e64059adc03@15.236.56.133:21000?discport=0 | 7414c1b34e38087a9c045f46549006e70bb00fc3 | True |
